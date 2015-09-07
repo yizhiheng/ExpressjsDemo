@@ -17,61 +17,52 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Project name</a>
+                <a class="navbar-brand" href="#">Demo</a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li class="active"><a href="">Demo</a></li>
+                    <li><a href="http://www.yizhiheng.com">About</a></li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
         </div>
     </nav>
-    <div class="container">
+    <div class="container main">
         <div class="starter-template">
-            <h1>Bootstrap starter template</h1>
-            <p class="lead">Use this document as a way to quickly start any new project.
-                <br> All you get is this text and a mostly barebones HTML document.</p>
+            <h1>What is your favorite city?</h1>
+            <p class="lead">Write down your favorite city and share your story with world!</p>
         </div>
-
         <form class="form-horizontal">
             <div class="form-group">
-                <label for="nameInput" class="col-sm-3 control-label">City Name</label>
-                <div class="col-sm-9">
-                    <input type="test" class="form-control" name="name" id="nameInput" placeholder="City Name">
-                </div>
+                <label for="nameInput" class="control-label">City Name</label>
+                <input type="test" class="form-control" name="name" id="nameInput" placeholder="City Name">
             </div>
             <div class="form-group">
-                <label for="descriptionInput" class="col-sm-3 control-label">Description</label>
-                <div class="col-sm-9">
-                    <input type="text" class="form-control" name="description" id="descriptionInput" placeholder="Description">
-                </div>
+                <label for="descriptionInput" class="control-label">Description</label>
+                <textarea class="form-control" name="description" id="descriptionInput" rows="3"></textarea>
             </div>
             <div class="form-group">
-                <div class="col-sm-offset-3 col-sm-9">
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
             </div>
         </form>
-        <table class="table table-striped">
-            <thead>
-                <tr><th>City Name</th><th>Description</th></tr>
-            </thead>
-            <tbody class='city-list'>
-                <tr>
-                    <td><a href=""><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a> Test</td>
-                    <td>test!</td>
-                </tr>
-                
-            </tbody>
-        </table>
+        
+        <div class="table-div">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>City Stories</th>
+                    </tr>
+                </thead>
+                <tbody class='city-list'>
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <!-- /.container -->
-
     <!-- Javascript -->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="js/client.js"></script>

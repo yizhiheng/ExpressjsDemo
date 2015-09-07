@@ -30,10 +30,10 @@ $(function() {
         for (var i in cities) {
             city = cities[i];
 
-            content = '<td>' + '<a href="#" data-city="' 
-                + city 
-                +'"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a> '
-                + city 
+            content = '<td>' 
+                + '<a href="" data-city="' + city +'">'
+                + '<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a> '
+                + '<a href="">' + city + '</a>'
                 + '</td>';
 
             // content = '<a href="/cities/' + city + '">' + city + '</a>' + // + // example on how to serve static images
@@ -59,7 +59,7 @@ $(function() {
             type: 'DELETE',
             url: '/cities/' + target.data('city')
         }).done(function() {
-            target.parents('li').remove();
+            target.parents('tr').remove();
         });
     });
 

@@ -2,13 +2,14 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
+.main {
+  width: auto;
+  max-width: 680px;
+}
 a {
   color: #00B7FF;
 }
-.form-horizontal {
-	max-width: 500px;
-}
+
 .starter-template {
   padding: 40px 15px;
   text-align: center;

@@ -33,7 +33,7 @@ router.route('/')
             response.sendStatus(400);
             return false;
         }
-
+        
         client.hset('cities', newCity.name, newCity.description, function(error) {
             if (error) throw error;
             response.status(201).json(newCity.name);
