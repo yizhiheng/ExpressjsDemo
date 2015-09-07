@@ -31,9 +31,8 @@ $(function() {
             city = cities[i];
 
             content = '<td>' 
-                + '<a href="" data-city="' + city +'">'
-                + '<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a> '
-                + '<a href="">' + city + '</a>'
+                + '<a href="" data-city="' + city + '"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a> '
+                + '<a href="/cities/' + city + '">' + city + '</a>'
                 + '</td>';
 
             // content = '<a href="/cities/' + city + '">' + city + '</a>' + // + // example on how to serve static images

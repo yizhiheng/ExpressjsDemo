@@ -46,25 +46,12 @@ router.route('/:name')
             if (error) throw error;
             response.sendStatus(204);
         });
-    });
+    })
 
-    // .get(function(request, response) {
-    //     client.hget('cities', request.params.name, function(error, description) {
-
-    //         if (error) throw error;
-    //         var cityInfo = {
-    //             "Name" = request.params.name,
-    //             "Description" = description,
-    //         };
-    //         response.json(cityInfo);
-
-    //         // response.render('show.ejs', {
-    //         //     city: {
-    //         //         name: request.params.name,
-    //         //         description: description
-    //         //     }
-    //         });
-    // });
-
+    .get(function(request, response) {
+        client.hget('cities', request.params.name, function(error, description) {
+            response.json(description);
+        });
+});
 
 module.exports = router;
