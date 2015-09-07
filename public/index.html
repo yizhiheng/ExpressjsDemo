@@ -38,27 +38,43 @@
 
         <form class="form-horizontal">
             <div class="form-group">
-                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                <label for="nameInput" class="col-sm-3 control-label">City Name</label>
+                <div class="col-sm-9">
+                    <input type="test" class="form-control" name="name" id="nameInput" placeholder="City Name">
                 </div>
             </div>
             <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputPassword3" placeholder="Password">
+                <label for="descriptionInput" class="col-sm-3 control-label">Description</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" name="description" id="descriptionInput" placeholder="Description">
                 </div>
             </div>
             <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
+                <div class="col-sm-offset-3 col-sm-9">
                     <button type="submit" class="btn btn-default">Submit</button>
                 </div>
             </div>
         </form>
+        <table class="table table-striped">
+            <thead>
+                <tr><th>City Name</th><th>Description</th></tr>
+            </thead>
+            <tbody class='city-list'>
+                <tr>
+                    <td><a href=""><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a> Test</td>
+                    <td>test!</td>
+                </tr>
+                
+            </tbody>
+        </table>
     </div>
     <!-- /.container -->
+
+    <!-- Javascript -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/client.js"></script>
 </body>
 
 </html>

@@ -13,3 +13,14 @@ a {
   padding: 40px 15px;
   text-align: center;
 }
+
+.city-list li::after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.city-list li a:last-child {
+    float: left;
+    padding-right: 10px;
+}
