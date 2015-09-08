@@ -25,3 +25,7 @@ a {
     float: left;
     padding-right: 10px;
 }
+.alert {
+    text-align: center;
+    display: none;
+}
